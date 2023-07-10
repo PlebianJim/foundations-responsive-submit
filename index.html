@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        form {
+          display: flex;
+          align-items: flex-end;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        .name {
+          flex-grow: 1;
+          flex-basis: 120px;
+        }
+        .email {
+          flex-grow: 3;
+          flex-basis: 170px;
+        }
+        button {
+          flex-grow: 1;
+          flex-basis: 70px;
+        }
+      </style>
+      
+      <form>
+        <label class="name" for="name-field">
+          Name:
+          <input id="name-field" />
+        </label>
+        <label class="email" for="email-field">
+          Email:
+          <input id="email-field" type="email" />
+        </label>
+        <button>
+          Submit
+        </button>
+      </form>
+
+</body>
+</html>
